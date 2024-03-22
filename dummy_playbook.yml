@@ -4,6 +4,6 @@
   tasks:
 
     - name: Create dummy file
-        ansible.builtin.file:
+      ansible.builtin.file:
         path: /root/dummy.txt
         state: file
