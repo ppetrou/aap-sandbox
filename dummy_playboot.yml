@@ -1,0 +1,9 @@
+---
+- name: Test AAP
+  hosts: all
+  tasks:
+
+    - name: Create dummy file
+      ansible.builtin.file:
+      path: /root/dummy.txt
+      state: file
