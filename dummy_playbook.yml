@@ -6,4 +6,4 @@
     - name: Create dummy file
       ansible.builtin.file:
         path: /root/dummy.txt
-        state: file
+        state: touch
