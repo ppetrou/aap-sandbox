@@ -1,6 +1,6 @@
 ---
 - name: Test AAP
-  hosts: all
+  hosts: rhel1, rhel2
   tasks:
 
     - name: Create dummy file
