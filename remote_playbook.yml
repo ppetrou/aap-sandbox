@@ -1,0 +1,9 @@
+---
+- name: Test AAP Remote Node
+  hosts: rhel8-ex
+  tasks:
+
+    - name: Create dummy file
+      ansible.builtin.file:
+        path: /root/dummy_remote.txt
+        state: touch
