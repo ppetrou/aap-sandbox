@@ -5,5 +5,5 @@
 
     - name: Create dummy file
       ansible.builtin.file:
-        path: /root/dummy_remote.txt
+        path: /home/ansible/dummy_remote.txt
         state: touch
