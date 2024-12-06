@@ -1,0 +1,13 @@
+---
+- name: Test AAP External Access
+  hosts: 127.0.0.1
+  connection: local
+  tasks:
+
+    - name: Test external access
+      ansible.builtin.command: ping -c 2 8.8.8.8
+      register: reg
+
+    - name: debug
+      ansible.builtin.debug:
+        var: reg
